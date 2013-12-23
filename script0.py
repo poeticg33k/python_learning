@@ -1,4 +1,4 @@
 #!/usr/bin/python
-
-print('hello Joel')
+name ="Joel"
+print('hello ' + name)
 print(2 ** 100)
