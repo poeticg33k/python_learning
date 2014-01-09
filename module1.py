@@ -1,3 +1,3 @@
-#!/bin/usr/python
+#!/usr/bin/python
 
 print('Hello module world!')
