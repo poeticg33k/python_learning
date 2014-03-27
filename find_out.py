@@ -11,19 +11,20 @@ prefix = sys.prefix
 #print prefix
 
 #first attempt
-if OS.startswith('darwin'):
+def finder(): 
+	
+	if OS.startswith('darwin'):
 
-	print 'this will work'
-	print(sys.version)
+	   print 'this will work'
+	   print(sys.version)
 
-elif OS.startswith('linux2'):
+        elif OS.startswith('linux2'):
 
-	print 'this will work'
-	print(sys.version)
+ 	   print 'this will work'
+	   print(sys.version)
 
-else:
+        else:
 
-	print  'OS is not supported'
+	   print  'OS is not supported'
 
-
-
+finder()
