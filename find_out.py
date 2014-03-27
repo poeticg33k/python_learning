@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import subprocess
 import sys
 OS = sys.platform
 fs_encoding  = sys.getfilesystemencoding()
@@ -19,6 +19,7 @@ def finder():
 	   print(sys.version)
 	   print(sys.version_info)
 	   print(sys.maxsize)
+	   subprocess.call(["ls", "-ltr"])
 
         elif OS.startswith('linux'):
 
@@ -26,8 +27,9 @@ def finder():
 	   print(sys.version)
 	   print(sys.version_info)
 	   print(sys.maxsize)
-
-        else:
+	   subprocess.call(["ls", "-ltr"])
+   	
+   	else:
 
 	   print  'OS is not supported'
 
