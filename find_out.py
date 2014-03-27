@@ -18,12 +18,14 @@ def finder():
 	   print OS 
 	   print(sys.version)
 	   print(sys.version_info)
+	   print(sys.maxsize)
 
-        elif OS.startswith('linux2'):
+        elif OS.startswith('linux'):
 
  	   print OS 
 	   print(sys.version)
 	   print(sys.version_info)
+	   print(sys.maxsize)
 
         else:
 
