@@ -17,14 +17,19 @@ def finder():
 
 	   print OS 
 	   print(sys.version)
+	   print(sys.version_info)
 
         elif OS.startswith('linux2'):
 
  	   print OS 
 	   print(sys.version)
+	   print(sys.version_info)
 
         else:
 
 	   print  'OS is not supported'
+
+
+
 
 finder()
