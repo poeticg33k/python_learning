@@ -12,7 +12,18 @@ prefix = sys.prefix
 
 #first attempt
 if OS.startswith('darwin'):
+
 	print 'this will work'
+	print(sys.version)
+
+elif OS.startswith('linux2'):
+
+	print 'this will work'
+	print(sys.version)
+
 else:
+
 	print  'OS is not supported'
+
+
 
