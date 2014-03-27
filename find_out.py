@@ -20,6 +20,7 @@ def finder():
 	   print(sys.version_info)
 	   print(sys.maxsize)
 	   subprocess.call(["ls", "-ltr"])
+	   subprocess.call(["w"])
 
         elif OS.startswith('linux'):
 
@@ -28,6 +29,7 @@ def finder():
 	   print(sys.version_info)
 	   print(sys.maxsize)
 	   subprocess.call(["ls", "-ltr"])
+	   subprocess.call(["w"])
    	
    	else:
 
