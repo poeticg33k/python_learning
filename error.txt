@@ -1,0 +1,4 @@
+DBD::Oracle::st execute_array failed: ORA-24381: error(s) in array DML
+ORA-01882: timezone region not found (DBD SUCCESS_WITH_INFO: error possibly near <*> indicator at char 81 in 'INSERT INTO TS_INFO  VALUES (TS_INFO_ID.nextval, :p1, :p2, :p3, TO_TIMESTAMP_TZ(:<*>p4, 'MON DD HH24:MI:SS TZR YYYY') AT TIME ZONE 'UTC', :p5, :p6, :p7, :p8, :p9, :p10, :p11, :p12, :p13, :p14, :p15, :p16, :p17, :p18, :p19, :p20)')
+executing 1 generated 1 errors [for Statement "INSERT INTO TS_INFO  VALUES (TS_INFO_ID.nextval, ?, ?, ?, TO_TIMESTAMP_TZ(?, 'MON DD HH24:MI:SS TZR YYYY') AT TIME ZONE 'UTC', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"] at /app/scripts/diag/parse_diag.pl line 397, <FILE> line 603.
+AUTO_ZIGBEE_MODULE_CHECK
