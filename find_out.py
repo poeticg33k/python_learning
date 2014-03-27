@@ -15,12 +15,12 @@ def finder():
 	
 	if OS.startswith('darwin'):
 
-	   print 'this will work'
+	   print OS 
 	   print(sys.version)
 
         elif OS.startswith('linux2'):
 
- 	   print 'this will work'
+ 	   print OS 
 	   print(sys.version)
 
         else:
