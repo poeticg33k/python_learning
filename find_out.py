@@ -43,17 +43,16 @@ def input():
 		answer = raw_input('i see you are on a MAC, would you like to see what i know?:')
 		if answer == 'y':
 			finder()
-	#	else:
-	#		sys.exit()
+		else:
+			sys.exit()
 
 	elif OS.startswith('linux'):
 
 		answer2 = raw_input('i see you are using linux, would you like to see what i know?:')
-		#print (answer2)
 		if answer2 == 'y':
 			finder()
-		#else:
-		#	sys.exit()
+		else:
+			sys.exit()
 
 
 
