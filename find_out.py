@@ -42,7 +42,7 @@ def input():
 
 		answer = raw_input('i see you are on a MAC, would you like to see what i know?:')
 		if answer == 'y':
-		finder()
+			finder()
 	#	else:
 	#		sys.exit()
 
