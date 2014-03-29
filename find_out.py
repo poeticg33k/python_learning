@@ -35,6 +35,17 @@ def finder():
 
 	   print  'OS is not supported'
 
+def wifi_scan():
+
+	if OS.startswith('darwin'):
+
+		subprocess.call(["airport", "-s"])
+
+	elif OS.startswith('linux'):
+
+		subprocess.call(["iw", "list"])
+	else:
+		sys.exit()
 
 def input():
 
@@ -42,7 +53,10 @@ def input():
 
 		answer = raw_input('i see you are on a MAC, would you like to see what i know?:')
 		if answer == 'y':
-			finder()
+			#finder()
+			wifi_scan()
+		elif answer == 'n':
+			print 'fine then i will keep my secrets!'
 		else:
 			sys.exit()
 
@@ -50,7 +64,10 @@ def input():
 
 		answer2 = raw_input('i see you are using linux, would you like to see what i know?:')
 		if answer2 == 'y':
-			finder()
+			#finder()
+			wifi_scan()
+		elif answer2 == 'n':
+			print 'fine then i will keep my secrets!'
 		else:
 			sys.exit()
 
