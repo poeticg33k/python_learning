@@ -111,8 +111,19 @@ def input():
 			sys.exit()
 
 
+def choices():
 
+	if OS.startswith('darwin'):
+		choice = raw_input('this is a mac these are what i can do, enter 1 2 or 3:')
+		if choice == '1':
+			wifi_scan()
+		elif choice == '2':
+			finder()
+		elif choice == '3':
+			folder()
+		else:
+			print 'ok then, i wont show you!'
 
-
-input()
+choices()
+#input()
 #finder()
