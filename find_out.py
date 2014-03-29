@@ -124,6 +124,18 @@ def choices():
 		else:
 			print 'ok then, i wont show you!'
 
+	if OS.startswith('linux'):
+		choice = raw_input('this is a linux box these are what i can do, enter 1 2 or 3:')
+		if choice == '1':
+			wifi_scan()
+		elif choice == '2':
+			finder()
+		elif choice == '3':
+			folder()
+		else:
+			print 'ok then, i wont show you!'
+
+
 choices()
 #input()
 #finder()
