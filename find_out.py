@@ -50,6 +50,7 @@ def wifi_scan():
 	elif OS.startswith('linux'):
 
 		subprocess.call(["iw", "list"])
+		subprocess.call(["ifconfig"])
 	else:
 		sys.exit()
 
