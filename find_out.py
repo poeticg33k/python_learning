@@ -60,6 +60,8 @@ def folder():
 		subprocess.call(["mkdir", "mine"])
 		print 'folder created'
 		time.sleep(0)
+		subprocess.call(["touch", "mine/file"])
+		print 'file created in mine'
 		subprocess.call(["rm", "-rf", "mine"])
 		print 'folder removed'
 	
