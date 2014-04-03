@@ -62,8 +62,13 @@ def folder():
 		time.sleep(0)
 		subprocess.call(["touch", "mine/file"])
 		print 'file created in mine'
-		subprocess.call(["rm", "-rf", "mine"])
-		print 'folder removed'
+		f = open('mine/file', 'w')
+		f.write('this is a file i jsut created\nadding second line\n')
+		f.close()
+		p = open('mine/file', 'rb').read()
+		print p
+		#subprocess.call(["rm", "-rf", "mine"])
+		#print 'folder removed'
 	
 	elif OS.startswith('linux'):
 		subprocess.call(["mkdir", "mine"])
@@ -71,8 +76,13 @@ def folder():
 		time.sleep(0)
 		subprocess.call(["touch", "mine/file"])
 		print 'file created in mine'
-		subprocess.call(["rm", "-rf", "mine"])
-		print 'folder removed'
+		f = open('mine/file', 'w')
+		f.write('this is a file i jsut created\nadding second line\n')
+		f.close()
+		p = open('mine/file', 'rb').read()
+		print p
+		#subprocess.call(["rm", "-rf", "mine"])
+		#print 'folder removed'
 	
 	else:
 		sys.exit()
