@@ -67,8 +67,9 @@ def folder():
 		f.close()
 		p = open('mine/file', 'rb').read()
 		print p
-		#subprocess.call(["rm", "-rf", "mine"])
-		#print 'folder removed'
+		time.sleep(5)
+		subprocess.call(["rm", "-rf", "mine"])
+		print 'folder removed'
 	
 	elif OS.startswith('linux'):
 		subprocess.call(["mkdir", "mine"])
@@ -81,8 +82,9 @@ def folder():
 		f.close()
 		p = open('mine/file', 'rb').read()
 		print p
-		#subprocess.call(["rm", "-rf", "mine"])
-		#print 'folder removed'
+		time.sleep(5)
+		subprocess.call(["rm", "-rf", "mine"])
+		print 'folder removed'
 	
 	else:
 		sys.exit()
