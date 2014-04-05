@@ -22,7 +22,7 @@ def finder():
 
 	   print OS 
 	   print(sys.version)
-	   print "Python version", (sys.version_info)
+	   print "Python", (sys.version_info)
 	   print(sys.maxsize)
 	   subprocess.call(["ls", "-ltr"])
 	   subprocess.call(["w"])
@@ -31,7 +31,7 @@ def finder():
 
  	   print OS 
 	   print(sys.version)
-	   print "Python version", (sys.version_info)
+	   print "Python", (sys.version_info)
 	   print(sys.maxsize)
 	   subprocess.call(["ls", "-ltr"])
 	   subprocess.call(["w"])
