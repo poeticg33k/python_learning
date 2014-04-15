@@ -152,7 +152,15 @@ def choices():
 		else:
 			print 'ok then, i wont show you!'
 
+def link():
 
+	if OS.startswith('darwin'):
+		if subprocess.call(["ls", "/usr/sbin/airport"]):
+			print 'airport is functional'
+		elif subprocess.call(["ln", "-s", "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport", "/usr/sbin/airport"]):
+			print 'airport is now functional'
+
+#link()
 choices()
 #input()
 #finder()
